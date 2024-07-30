@@ -68,7 +68,7 @@ export class GroceryList extends Component {
                     
                 </ul>
                 <div className="container">
-                    <button onClick={() => this.deleteItem()} className="btn delete">Delete</button>
+                   { this.state.groceryList?.length>0 && <button onClick={() => this.deleteItem()} className="btn delete">Delete</button>}
                 </div>
                 </form>
             </div>
